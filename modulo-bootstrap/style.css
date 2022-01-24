@@ -1,0 +1,23 @@
+.nav{
+  background-color: aquamarine;
+  padding-left: 120px;
+}
+
+#sobre-mim{
+  background-color: brown;
+  height: 70vh;
+}
+
+#projetos{
+  height: 70vh;
+}
+
+#contato{
+  background-color: cornflowerblue;
+  height: 70vh;
+}
+
+footer{
+  height:50px;
+  background-color: aquamarine;
+}
