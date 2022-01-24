@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Aprendendo Bootstrap</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="nav">
+    <a href="" class="nav-link">
+      <img src="img/logo.jpg" alt="">
+    </a>
+    <a href="#sobre-mim" class="nav-link">Sobre mim</a>
+    <a href="#projetos" class="nav-link">Projetos</a>
+    <a href="#contato" class="nav-link">Contato</a>
+  </nav>
+
+  <section id="sobre-mim">
+    <div class="container-fluid text-center">
+      <h4>Ozni Gabriel</h4>
+      <img src="img/logo.jpg" alt="">
+      <p>Um jovem Baiano com vontade de crescer.</p>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <div class="container-fluid text-center">
+      <div class="row">
+
+        <div class="col-4">
+          <h5>Titulo do Projeto</h5>
+          <img src="img/logo.jpg" alt="">
+          <p>Descrição do Projeto</p>
+        </div>
+
+        <div class="col-4">
+          <h5>Titulo do Projeto</h5>
+          <img src="img/logo.jpg" alt="">
+          <p>Descrição do Projeto</p>
+        </div>
+
+        <div class="col-4">
+          <h5>Titulo do Projeto</h5>
+          <img src="img/logo.jpg" alt="" class="">
+          <p>Descrição do Projeto</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="container text-center">
+      <form action="" method="post">
+        <label for="email">Digite seu Email:</label><br>
+        <input type="email" name="" id="email"><br>
+        <label for="mensagem">Digite sua mensagem:</label><br>
+        <textarea name="mensagem" id="mensagem" cols="45" rows="4"></textarea><br>
+        <input type="submit" value="Enviar" class="btn btn-success">
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-fluid text-center">
+      <span>Desenvolvido por Ozni Gabriel</span>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-linkedin"></i>
+    </div>
+  </footer>
+</body>
+
+</html>
