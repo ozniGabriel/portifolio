@@ -1,23 +1,92 @@
+:root{
+  --borda: 3px red solid;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
 .nav{
-  background-color: aquamarine;
+  background-color: rgb(28, 43, 38);
   padding-left: 120px;
 }
 
-#sobre-mim{
-  background-color: brown;
+.nav #logo{
+  color: black;
+  border: 2px aliceblue dotted;
+}
+
+.nav a{
+  color: aliceblue;
+}
+
+#sobreMim{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
   height: 70vh;
+  background-color: brown;
+  color: aliceblue;
 }
 
 #projetos{
-  height: 70vh;
+  height: auto;
+  padding: 20px;
+}
+
+#projetos h3{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#projetos .row{
+  margin-bottom: 30px;
 }
 
 #contato{
-  background-color: cornflowerblue;
-  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  height: auto;
+  background-color: rgb(45, 120, 240);
 }
 
-footer{
-  height:50px;
-  background-color: aquamarine;
+#contato .conectar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+   border: var(--borda)
 }
+
+#contato .links{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  border: var(--borda)
+}
+
+.links svg{
+  width: 30px;
+  height: 30px;
+}
+
+
+#contato .formulario{
+  padding: 10px;
+   border: var(--borda)
+}
+
+#contato .inputForm{
+  width: 400px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+

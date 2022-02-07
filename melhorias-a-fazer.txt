@@ -1,9 +1,5 @@
-Usar modelo da landing page da Rafa pra estilizar a parte "sobre mim"
+Estilizar
 
-Escolher/fazer um logo pra mim
-
-melhorar as cores da página
-
-Deixar formulário ativo (dando de fato pra receber emails)
+Ativar formulário (dando de fato pra receber emails)
 
 Por alguma animação
