@@ -1,5 +1,7 @@
-Estilizar
+Botar carrosel em cada projeto
 
 Ativar formulário (dando de fato pra receber emails)
 
 Por alguma animação
+
+Organizar padrão de projeto (pasta assets)

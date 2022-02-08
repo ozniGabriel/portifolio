@@ -13,41 +13,85 @@ a {
 }
 
 .nav{
-  background-color: rgb(28, 43, 38);
+  background-color: black;
   padding-left: 120px;
+  position: fixed;
+  width: 100%;
 }
 
 .nav #logo{
   color: black;
-  border: 2px aliceblue dotted;
+  background-color: black;
+  font-family: fantasy;
+  color: darkorange;
+  font-weight: 300;
+  font-size: larger;
 }
 
 .nav a{
-  color: aliceblue;
+  color: rgb(192, 196, 201);
+}
+
+.nav a:hover{
+  color: darkorange;
 }
 
 #sobreMim{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20%;
-  height: 70vh;
-  background-color: brown;
+  gap: 6%;
+  height: 75vh;
+  background-color: rgb(199, 123, 52);
   color: aliceblue;
+}
+
+
+
+#sobreMim .perfil{
+  width: 100px;
+  margin-top: 4%;
+  border: none;
+  border-radius: 50px;
+}
+
+#sobreMim .bio{
+  padding: 15px;
+  border-left: 4px black solid;
 }
 
 #projetos{
   height: auto;
   padding: 20px;
+  background-color: rgb(47, 51, 50);
+}
+
+#projetos .row{
+  margin-bottom: 30px;
+  padding-top: 20px;
+  border-top: 2px red solid;
 }
 
 #projetos h3{
   margin-top: 20px;
   margin-bottom: 40px;
+  color: aliceblue;
 }
 
-#projetos .row{
-  margin-bottom: 30px;
+#projetos .tituloDeProjeto{
+  color: darkorange;
+}
+
+#projetos .descricao{
+  color: antiquewhite;
+}
+
+#projetos .github{
+  color: rgb(204, 248, 7);
+}
+
+#projetos .github:hover{
+  color: rgb(235, 225, 217);
 }
 
 #contato{
@@ -55,7 +99,7 @@ a {
   justify-content: space-around;
   padding: 15px;
   height: auto;
-  background-color: rgb(45, 120, 240);
+  background-color: rgb(199, 123, 52);
 }
 
 #contato .conectar{
@@ -63,30 +107,43 @@ a {
   flex-direction: column;
   justify-content: center;
   padding: 10px;
-   border: var(--borda)
+  
 }
 
 #contato .links{
   display: flex;
   gap: 15px;
   justify-content: center;
-  border: var(--borda)
+  
 }
 
-.links svg{
+#contato .links svg{
   width: 30px;
   height: 30px;
 }
 
+#contato .bi-linkedin:hover{
+  color: rgb(4, 0, 255);
+}
+
+#contato .bi-instagram:hover{
+  color: rgb(193, 0, 255);
+}
+
+#contato .bi-github:hover{
+  color: rgb(255, 255, 255);
+}
 
 #contato .formulario{
   padding: 10px;
-   border: var(--borda)
+   
 }
 
 #contato .inputForm{
   width: 400px;
   padding: 8px;
   margin-bottom: 8px;
+  border: none;
+  border-radius: 4px;
 }
 
