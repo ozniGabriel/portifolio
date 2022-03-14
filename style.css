@@ -41,7 +41,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 6%;
-  height: 75vh;
+  height: 100vh;
   background-color: rgb(199, 123, 52);
   color: aliceblue;
 }
@@ -49,10 +49,11 @@ a {
 
 
 #sobreMim .perfil{
-  width: 100px;
+  width: 300px;
+  height: 350px;
   margin-top: 4%;
   border: none;
-  border-radius: 50px;
+  border-radius: 65%;
 }
 
 #sobreMim .bio{
@@ -67,15 +68,30 @@ a {
 }
 
 #projetos .row{
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   padding-top: 20px;
-  border-top: 2px red solid;
+}
+
+#projetos .col-6{
+  display: flex;
+  gap: 10px;
+}
+
+#projetos .informacoesDoProjeto{
+  border: solid 3px red;
+  text-align: center;
 }
 
 #projetos h3{
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   color: aliceblue;
+}
+
+.fotoProjeto{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
 }
 
 #projetos .tituloDeProjeto{
