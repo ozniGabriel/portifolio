@@ -1,4 +1,4 @@
-:root{
+:root {
   --borda: 3px red solid;
 }
 
@@ -8,18 +8,18 @@
   box-sizing: border-box;
 }
 
-a {
+a, footer {
   text-decoration: none;
 }
 
-.nav{
+.nav {
   background-color: black;
   padding-left: 120px;
   position: fixed;
   width: 100%;
 }
 
-.nav #logo{
+.nav #logo {
   color: black;
   background-color: black;
   font-family: fantasy;
@@ -28,138 +28,178 @@ a {
   font-size: larger;
 }
 
-.nav a{
+.nav a {
   color: rgb(192, 196, 201);
 }
 
-.nav a:hover{
+.nav a:hover {
   color: darkorange;
 }
 
-#sobreMim{
+#sobreMim {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 6%;
   height: 100vh;
-  background-color: rgb(199, 123, 52);
-  color: aliceblue;
+  background-color: rgb(5, 6, 44);
+  color: rgb(236, 239, 241);
 }
 
-
-
-#sobreMim .perfil{
+#sobreMim .perfil {
   width: 300px;
   height: 350px;
   margin-top: 4%;
   border: none;
+  box-shadow: 1px 3px 3px rgb(107, 27, 16, .2);
   border-radius: 65%;
+  animation-name: bordaFoto;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+  animation-duration: 15s;
 }
 
-#sobreMim .bio{
+@keyframes bordaFoto {
+  from {
+    box-shadow: 4px 4px 4px rgb(65, 13, 43);
+  }
+
+  to {
+    box-shadow: 6px 4px 4px rgb(223, 222, 231);
+  }
+}
+
+#sobreMim .bio {
   padding: 15px;
-  border-left: 4px black solid;
+  border-left: 4px rgb(219, 213, 213) solid;
 }
 
-#projetos{
-  height: auto;
-  padding: 20px;
-  background-color: rgb(47, 51, 50);
+#sobreMim .bio h4{
+  font-weight: 800;
 }
 
-#projetos .row{
-  margin-bottom: 50px;
-  padding-top: 20px;
+#sobreMim .bio p{
+  font-weight: 700;
 }
 
-#projetos .col-6{
+#sobreMim .container {
   display: flex;
   gap: 10px;
 }
 
-#projetos .informacoesDoProjeto{
-  border: solid 3px red;
-  text-align: center;
+#sobreMim .stacks {
+  animation-name: moveStacksRight;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
 }
 
-#projetos h3{
+@keyframes moveStacksRight {
+  from {
+    margin-left: 0px;
+  }
+
+  to {
+    margin-left: 210px;
+  }
+}
+
+@keyframes moveStacksLeft {
+  from {
+    margin-left: 210px;
+  }
+
+  to {
+    margin-left: 0px;
+  }
+}
+
+#projetos {
+  height: auto;
+  padding: 20px;
+  background-color: rgb(55, 86, 126);
+}
+
+#projetos .row {
+  margin-bottom: 50px;
+  padding-top: 20px;
+}
+
+#projetos .col-6 {
+  display: flex;
+  gap: 10px;
+}
+
+#projetos .informacoesDoProjeto {
+  text-align: center;
+  /* border:  solid 2px red; */
+  margin: 10%;
+}
+
+#projetos h3 {
   margin-top: 20px;
   margin-bottom: 50px;
   color: aliceblue;
 }
 
-.fotoProjeto{
+.fotoProjeto {
   width: 200px;
   height: 200px;
   border-radius: 100%;
 }
 
-#projetos .tituloDeProjeto{
+#projetos .tituloDeProjeto {
   color: darkorange;
 }
 
-#projetos .descricao{
+#projetos .descricao {
   color: antiquewhite;
 }
 
-#projetos .github{
+#projetos .github {
   color: rgb(204, 248, 7);
 }
 
-#projetos .github:hover{
+#projetos .github:hover {
   color: rgb(235, 225, 217);
 }
 
-#contato{
+#contato {
   display: flex;
   justify-content: space-around;
   padding: 15px;
   height: auto;
-  background-color: rgb(199, 123, 52);
+  background-color: rgb(5, 6, 44);
+  color: aliceblue;
 }
 
-#contato .conectar{
+#contato .conectar {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 10px;
-  
 }
 
-#contato .links{
+#contato .links {
   display: flex;
   gap: 15px;
   justify-content: center;
-  
 }
 
-#contato .links svg{
+#contato .links svg {
   width: 30px;
   height: 30px;
 }
 
-#contato .bi-linkedin:hover{
+#contato .bi-linkedin:hover {
   color: rgb(4, 0, 255);
 }
 
-#contato .bi-instagram:hover{
+#contato .bi-instagram:hover {
   color: rgb(193, 0, 255);
 }
 
-#contato .bi-github:hover{
+#contato .bi-github:hover {
   color: rgb(255, 255, 255);
 }
 
-#contato .formulario{
-  padding: 10px;
-   
-}
-
-#contato .inputForm{
-  width: 400px;
-  padding: 8px;
-  margin-bottom: 8px;
-  border: none;
-  border-radius: 4px;
-}
 
