@@ -1,0 +1,106 @@
+@media (max-width: 860px) {
+    #sobreMim .perfil{
+        width: 200px;
+        height: 250px;
+    }
+
+    .projects .column{
+        width: 40%;
+    }
+}
+
+@media (max-width: 720px) {
+    #sobreMim{
+        flex-direction: column;
+    }
+
+    .projects .column{
+        font-size: 20px;
+    }
+
+    .projects img{
+        width: 250px;
+        height: 200px;
+    }
+}
+
+/*ADD MENU HAMBURGUER*/
+@media (max-width: 580px) {
+    .projects img{
+        width: 350px;
+        height: 300px;
+    }
+
+    .projects .column{
+        font-size: 25px;
+        width: 70%;
+    }
+
+    .projects .row{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    #sobreMim .bio{
+        width: 90%;
+        gap: 10px;
+    }
+
+    #sobreMim svg{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 440px) {
+    .projects img{
+        width: 250px;
+        height: 200px;
+    }
+    .projects .column{
+        font-size: 20px;
+    }
+
+    @keyframes moveStacksRight {
+        from {
+          margin-left: 0px;
+        }
+      
+        to {
+          margin-left: 180px;
+        }
+      }
+      
+      @keyframes moveStacksLeft {
+        from {
+          margin-left: 180px;
+        }
+      
+        to {
+          margin-left: 0px;
+        }
+      }
+}
+
+@media (max-width: 360px) {
+    @keyframes moveStacksRight {
+        from {
+          margin-left: 0px;
+        }
+      
+        to {
+          margin-left: 150px;
+        }
+      }
+      
+      @keyframes moveStacksLeft {
+        from {
+          margin-left: 150px;
+        }
+      
+        to {
+          margin-left: 0px;
+        }
+      }
+}

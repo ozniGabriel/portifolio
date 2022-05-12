@@ -6,24 +6,34 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a, footer {
   text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: black;
 }
 
 .nav {
   background-color: black;
-  padding-left: 120px;
   position: fixed;
   width: 100%;
+  padding: 20px;
+  padding-left: 100px;
+  display: flex;
+  gap: 50px;
+  justify-content: start;
 }
 
 .nav #logo {
   color: black;
   background-color: black;
   font-family: fantasy;
-  color: darkorange;
+  color: rgb(255, 255, 255);
   font-weight: 300;
   font-size: larger;
 }
@@ -57,6 +67,7 @@ a, footer {
   animation-iteration-count: infinite;
   animation-delay: 3s;
   animation-duration: 15s;
+
 }
 
 @keyframes bordaFoto {
@@ -70,6 +81,9 @@ a, footer {
 }
 
 #sobreMim .bio {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   padding: 15px;
   border-left: 4px rgb(219, 213, 213) solid;
 }
@@ -113,61 +127,63 @@ a, footer {
   }
 }
 
-#projetos {
-  height: auto;
-  padding: 20px;
-  background-color: rgb(55, 86, 126);
-}
-
-#projetos .row {
-  margin-bottom: 50px;
-  padding-top: 20px;
-}
-
-#projetos .col-6 {
+.projects{
+  background-color: aquamarine;
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+.projects .title{
+  color: black;
+  margin: 30px;
+  font-size: 25px;
 }
 
-#projetos .informacoesDoProjeto {
-  text-align: center;
-  /* border:  solid 2px red; */
-  margin: 10%;
-}
-
-#projetos h3 {
-  margin-top: 20px;
+.projects .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 50px;
+  border-bottom: 1px gray solid;
+  padding-bottom: 40px;
+  gap: 60px;
+}
+
+.projects .column{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  font-size: 25px;
+  gap: 45px;
+}
+.projects img{
+  background: url('img/project.png');
+  width: 350px;
+  height: 300px;
+}
+
+.projects .github{
+  background-color: aliceblue;
+  padding: 10px;
+  width: 180px;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.projects .github:hover{
+  background-color: black;
   color: aliceblue;
-}
-
-.fotoProjeto {
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-}
-
-#projetos .tituloDeProjeto {
-  color: darkorange;
-}
-
-#projetos .descricao {
-  color: antiquewhite;
-}
-
-#projetos .github {
-  color: rgb(204, 248, 7);
-}
-
-#projetos .github:hover {
-  color: rgb(235, 225, 217);
 }
 
 #contato {
   display: flex;
   justify-content: space-around;
-  padding: 15px;
-  height: auto;
+  height: 200px;
   background-color: rgb(5, 6, 44);
   color: aliceblue;
 }
@@ -176,7 +192,7 @@ a, footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10px;
+  gap: 15px;
 }
 
 #contato .links {
@@ -189,9 +205,11 @@ a, footer {
   width: 30px;
   height: 30px;
 }
-
+#contato a{
+  color:aliceblue;
+}
 #contato .bi-linkedin:hover {
-  color: rgb(4, 0, 255);
+  color: rgb(28, 96, 243);
 }
 
 #contato .bi-instagram:hover {
@@ -199,7 +217,5 @@ a, footer {
 }
 
 #contato .bi-github:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(216, 241, 51);
 }
-
-
