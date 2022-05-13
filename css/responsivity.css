@@ -26,6 +26,20 @@
 
 /*ADD MENU HAMBURGUER*/
 @media (max-width: 580px) {
+    .nav-link{
+      display: none;
+    }
+
+    .menuHamburguer{
+      display: flex;
+      cursor: pointer;
+    }
+
+    .nav{
+      padding-left: 0px;
+      justify-content: space-around;
+    }
+
     .projects img{
         width: 350px;
         height: 300px;

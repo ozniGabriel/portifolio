@@ -46,6 +46,25 @@ a:hover{
   color: darkorange;
 }
 
+.menuHamburguer{
+  color: aliceblue;
+  transform: rotate(90deg);
+  font-size: 25px;
+  display: none;
+  position: absolute;
+  left: 90%;
+  top: 30%;
+}
+
+.mobileStyleMenu{
+  height: 100vh;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #sobreMim {
   display: flex;
   justify-content: center;
