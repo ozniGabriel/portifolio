@@ -35,7 +35,7 @@ a:hover{
   font-family: fantasy;
   color: rgb(255, 255, 255);
   font-weight: 300;
-  font-size: larger;
+  font-size: 25px;
 }
 
 .nav a {
@@ -49,12 +49,14 @@ a:hover{
 .menuHamburguer{
   color: aliceblue;
   transform: rotate(90deg);
+  transition: 0.2s linear;
   font-size: 25px;
   display: none;
   position: absolute;
   left: 90%;
   top: 30%;
 }
+
 
 .mobileStyleMenu{
   height: 100vh;
@@ -63,6 +65,8 @@ a:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0
+  transition: opacity 2s;
 }
 
 #sobreMim {
@@ -71,8 +75,8 @@ a:hover{
   align-items: center;
   gap: 6%;
   height: 100vh;
-  background-color: rgb(5, 6, 44);
-  color: rgb(236, 239, 241);
+  background-color: rgb(224, 162, 55);
+  color: rgb(0, 0, 0);
 }
 
 #sobreMim .perfil {
@@ -84,27 +88,29 @@ a:hover{
   border-radius: 65%;
   animation-name: bordaFoto;
   animation-iteration-count: infinite;
-  animation-delay: 3s;
-  animation-duration: 15s;
+  animation-duration: 7s;
 
 }
 
 @keyframes bordaFoto {
   from {
-    box-shadow: 4px 4px 4px rgb(65, 13, 43);
+    box-shadow: 4px 4px 4px rgb(0, 0, 0);
   }
 
   to {
-    box-shadow: 6px 4px 4px rgb(223, 222, 231);
+    box-shadow: 6px 4px 4px rgb(184, 101, 101);
   }
 }
 
+#sobreMim #name{
+  font-size: 20px;
+}
 #sobreMim .bio {
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding: 15px;
-  border-left: 4px rgb(219, 213, 213) solid;
+  border-left: 4px rgb(11, 2, 2) solid;
 }
 
 #sobreMim .bio h4{
@@ -147,7 +153,7 @@ a:hover{
 }
 
 .projects{
-  background-color: aquamarine;
+  background-color: rgb(233, 255, 248);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,6 +162,10 @@ a:hover{
 .projects .title{
   color: black;
   margin: 30px;
+  font-size: 25px;
+}
+
+.projects .tituloDeProjeto{
   font-size: 25px;
 }
 
@@ -183,10 +193,12 @@ a:hover{
   background: url('img/project.png');
   width: 350px;
   height: 300px;
+  border: 2px rgb(208, 123, 11) solid;
 }
 
 .projects .github{
-  background-color: aliceblue;
+  background-color: rgb(30, 39, 218);
+  color: aliceblue;
   padding: 10px;
   width: 180px;
   border-radius: 25px;
@@ -203,7 +215,7 @@ a:hover{
   display: flex;
   justify-content: space-around;
   height: 200px;
-  background-color: rgb(5, 6, 44);
+  background-color: rgb(0, 0, 0);
   color: aliceblue;
 }
 

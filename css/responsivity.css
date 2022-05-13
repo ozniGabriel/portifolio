@@ -28,6 +28,7 @@
 @media (max-width: 580px) {
     .nav-link{
       display: none;
+      font-size: 20pt;
     }
 
     .menuHamburguer{
@@ -37,7 +38,7 @@
 
     .nav{
       padding-left: 0px;
-      justify-content: space-around;
+      justify-content: space-around
     }
 
     .projects img{

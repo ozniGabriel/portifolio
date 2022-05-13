@@ -18,13 +18,13 @@ let iniciarAnimacao = setInterval(() => {
 // MOSTRANDO E OCULTANDO O MENU HAMBURGUER
 const showMenu = ()=>{
     navMenu.classList.toggle('mobileStyleMenu')
-
     if(menuHamburguerActive){
         itemsMenu.forEach(link => link.style.display = "none")
         menuHamburguer.style.transform =  "rotate(90deg)"
         menuHamburguer.innerHTML = "|||"
         menuHamburguer.style.top = "30%"
         menuHamburguerActive = false
+        
     } else {
         itemsMenu.forEach(link => link.style.display = "flex")
         menuHamburguer.style.transform =  "rotate(0deg)"
@@ -32,6 +32,7 @@ const showMenu = ()=>{
         menuHamburguer.style.top = "5%"
         menuHamburguerActive = true
     }
+    
 }
 
 // QUANDO UM LINK DO MENU FOR CLICADO, O MENU DEVERÁ DESAPARECER
