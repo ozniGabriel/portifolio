@@ -190,10 +190,8 @@ a:hover{
   gap: 45px;
 }
 .projects img{
-  background: url('img/project.png');
   width: 350px;
   height: 300px;
-  border: 2px rgb(208, 123, 11) solid;
 }
 
 .projects .github{

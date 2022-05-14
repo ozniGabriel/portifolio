@@ -25,7 +25,7 @@
 }
 
 /*ADD MENU HAMBURGUER*/
-@media (max-width: 580px) {
+@media (max-width: 610px) {
     .nav-link{
       display: none;
       font-size: 20pt;
