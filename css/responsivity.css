@@ -26,19 +26,35 @@
 
 /*ADD MENU HAMBURGUER*/
 @media (max-width: 610px) {
-    .nav-link{
+    #itemsMenu{
       display: none;
-      font-size: 20pt;
+      flex-direction: column;
+      gap: 50px;
+      position: absolute;
+      height: 100vh;
+      width: 50vw;
+      left: 0%;
+      top: 78px;
+      padding-left: 30px;
+      padding-top: 40px;
+      background-color: black;
+      font-size: 20px;
+      opacity: 0.9;
     }
-
-    .menuHamburguer{
+    
+    #menu{
+      display: block;
+    }
+    
+    #nav.active #itemsMenu {
       display: flex;
-      cursor: pointer;
+      
     }
 
-    .nav{
-      padding-left: 0px;
-      justify-content: space-around
+    #itemsMenu li{
+      border-bottom: 1px solid yellow;
+      padding: 12px;
+    
     }
 
     .projects img{
