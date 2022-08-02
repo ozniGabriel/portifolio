@@ -36,6 +36,10 @@ const showMenu = ()=>{
 }
 
 // QUANDO UM LINK DO MENU FOR CLICADO, O MENU DEVERÁ DESAPARECER
-itemsMenu.forEach(item => item.addEventListener('click', showMenu))
+itemsMenu.forEach(item => item.addEventListener('click', ()=>{
+    if(itemsMenu[0].style.display != "none"){
+        return
+    }
+}))
 
 menuHamburguer.addEventListener("click", showMenu)

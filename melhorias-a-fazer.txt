@@ -1,3 +1,1 @@
-Organizar padrão de projeto (pasta assets)
-
 Colocar a foto dos projetos, e alterar a foto da bio
