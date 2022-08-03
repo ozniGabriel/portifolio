@@ -26,7 +26,8 @@
 
 /*ADD MENU HAMBURGUER*/
 @media (max-width: 610px) {
-    #itemsMenu{
+ 
+  #itemsMenu{
       display: none;
       flex-direction: column;
       gap: 50px;
@@ -48,13 +49,13 @@
     
     #nav.active #itemsMenu {
       display: flex;
-      
     }
+
+    
 
     #itemsMenu li{
       border-bottom: 1px solid yellow;
       padding: 12px;
-    
     }
 
     .projects img{
